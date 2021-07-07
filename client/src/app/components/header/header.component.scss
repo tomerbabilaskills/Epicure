@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 123px;
+  .left-container {
+    display: flex;
+    align-items: center;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      .name {
+        font-size: 27px;
+        letter-spacing: 1.35px;
+        margin: 0 10px;
+      }
+    }
+    .link {
+      text-decoration: none;
+      color: inherit;
+      font-size: 18px;
+      font-weight: lighter;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .right-container {
+    display: flex;
+    align-items: center;
+    .search-container {
+      display: flex;
+      border: 1px black solid;
+      border-radius: 5px;
+      input {
+        border: 0;
+        font-size: 18px;
+        box-sizing: border-box;
+        width: 300px;
+        padding: 5px;
+        margin-left: 5px;
+      }
+      img {
+        padding: 5px;
+      }
+    }
+    .icon {
+      &:not(:first-child) {
+        margin-left: 28px;
+      }
+    }
+  }
+}
