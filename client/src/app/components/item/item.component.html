@@ -1,0 +1,11 @@
+<img src="{{ imgSrc }}" alt="{{ itemName }}" />
+<div class="information-container">
+  <span class="title">{{ itemName }}</span>
+  <span class="description">{{ description }}</span>
+  <div *ngIf="this.type === 'dish'">
+    <!-- <div *ngIf="this.dishTypes">
+            <img *ngFor="let imgSrc of this.dishTypes" src="imgSrc" alt="">
+        </div> -->
+    <div>₪{{ price }}</div>
+  </div>
+</div>

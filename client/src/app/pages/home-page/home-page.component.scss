@@ -1,6 +1,8 @@
 .bg-img {
   background-image: url(../../../assets/images/hero-picture.jpg);
   background-repeat: no-repeat;
+  // background-size: contain;
+  // height: 696px;
   overflow: auto;
   .front {
     background-color: rgba(255, 255, 255, 0.88);
@@ -32,6 +34,26 @@
       }
       img {
         padding: 10px 15px;
+      }
+    }
+  }
+}
+
+.popular-restaurants-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  .title {
+    font-size: 30px;
+    letter-spacing: 1.25px;
+    padding: 40px;
+  }
+  .restaurants-container {
+    display: flex;
+    .restaurant {
+      &:not(:last-child) {
+        margin-right: 10px;
       }
     }
   }
