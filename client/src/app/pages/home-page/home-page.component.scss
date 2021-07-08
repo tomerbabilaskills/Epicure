@@ -1,0 +1,38 @@
+.bg-img {
+  background-image: url(../../../assets/images/hero-picture.jpg);
+  background-repeat: no-repeat;
+  overflow: auto;
+  .front {
+    background-color: rgba(255, 255, 255, 0.88);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 240px 330px;
+    padding: 40px;
+    span {
+      font-size: 35px;
+      max-width: 450px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    .search-container {
+      display: flex;
+      border: 1px black solid;
+      border-radius: 5px;
+      width: 35vw;
+      input {
+        border: 0;
+        font-size: 18px;
+        box-sizing: border-box;
+        width: 300px;
+        padding: 10px;
+        padding-left: 0;
+        background: transparent;
+      }
+      img {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
