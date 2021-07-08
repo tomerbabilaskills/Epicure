@@ -106,3 +106,46 @@
     }
   }
 }
+
+.chef-container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .chef-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 40px;
+  }
+  .chef-info-container {
+    display: flex;
+    .chef-img-container {
+      position: relative;
+      width: 430px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      div {
+        position: absolute;
+        height: 78px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        letter-spacing: 1.5px;
+        font-family: HelveticaNeue;
+      }
+    }
+    .chef-description {
+      max-width: 540px;
+      text-align: justify;
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin-left: 70px;
+    }
+  }
+}
