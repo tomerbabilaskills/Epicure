@@ -8,31 +8,74 @@
     </div>
   </div>
 </div>
-<div class="popular-restaurants-container">
+<div class="display-items-container">
   <span class="title">{{
     "the popular restaurants in epicure :" | uppercase
   }}</span>
-  <div class="restaurants-container">
+  <div class="items-container">
     <app-item
-      class="restaurant"
+      class="item"
       type="restaurant"
       itemName="Claro"
       description="Ran Shmueli"
       imgSrc="../../assets/images/restaurants/claro.jpg"
     ></app-item>
     <app-item
-      class="restaurant"
+      class="item"
       type="restaurant"
       itemName="Lumina"
       description="Meir Adoni"
       imgSrc="../../assets/images/restaurants/mizlala-gret-mullet-fillet.jpg"
     ></app-item>
     <app-item
-      class="restaurant"
+      class="item"
       type="restaurant"
       itemName="Tiger Lilly"
       description="Yanir Green"
       imgSrc="../../assets/images/restaurants/tiger-lili.jpg"
     ></app-item>
+  </div>
+</div>
+<div class="display-items-container">
+  <span class="title">{{ "signature dish of :" | uppercase }}</span>
+  <div class="items-container">
+    <!-- <div class="one-dish"
+        dishTypes="['spicy']"
+      ></app-item>
+    </div> -->
+    <div class="item dish-container">
+      <span class="restaurant-title">Tiger Lilly</span>
+      <app-item
+        type="dish"
+        itemName="Pad Ki Mao"
+        description="Shrimps, Glass Noodles, Kemiri Nuts, Shallots, 
+        Lemon Grass, Magic 
+        Chili Brown Coconut"
+        imgSrc="../../assets/images/dishes/pad-ki-mao.jpg"
+        price="88"
+      ></app-item>
+    </div>
+    <div class="item dish-container">
+      <span class="restaurant-title">Kab Kem</span>
+      <app-item
+        type="dish"
+        itemName="Garbanzo Frito"
+        description="Polenta fingers, veal cheek,
+      magic chili cured lemon
+      cream, yellow laksa"
+        imgSrc="../../assets/images/dishes/garbanzo.jpg"
+        price="98"
+      ></app-item>
+    </div>
+    <div class="item dish-container">
+      <span class="restaurant-title">Popina</span>
+      <app-item
+        type="dish"
+        itemName="Smoked Pizza"
+        description='Basil dough, cashew "butter", demi-glace, bison & radish'
+        imgSrc="../../assets/images/dishes/pizza.jpg"
+        price="65"
+      ></app-item>
+    </div>
   </div>
 </div>

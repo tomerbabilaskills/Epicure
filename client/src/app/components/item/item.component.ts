@@ -10,8 +10,8 @@ export class ItemComponent implements OnInit {
   @Input() itemName!: string;
   @Input() description!: string;
   @Input() imgSrc!: string;
-  @Input() price?: number;
-  @Input() dishTypes?: string[];
+  @Input() price?: string;
+  @Input() dishTypes?: string;
 
   constructor() {}
 
