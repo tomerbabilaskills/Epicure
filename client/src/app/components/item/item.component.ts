@@ -12,6 +12,7 @@ export class ItemComponent implements OnInit {
   @Input() imgSrc!: string;
   @Input() price?: string;
   @Input() dishTypes?: string;
+  @Input() size: string = 'big';
 
   constructor() {}
 
