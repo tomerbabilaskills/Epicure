@@ -8,19 +8,19 @@
     </div>
   </div>
 </div>
-<div class="display-items-container">
+<div class="display-card-container">
   <span class="title">{{
     "the popular restaurants in epicure :" | uppercase
   }}</span>
-  <div class="items-container">
-    <app-item
-      *ngFor="let item of data.restaurants"
-      class="item"
+  <div class="card-container">
+    <app-card
+      *ngFor="let card of data.restaurants"
+      class="card"
       type="restaurant"
-      [itemName]="item.name"
-      [description]="item.description"
-      [imgSrc]="item.imgSrc"
-    ></app-item>
+      [name]="card.name"
+      [description]="card.description"
+      [imgSrc]="card.imgSrc"
+    ></app-card>
   </div>
   <div class="show-more">
     <span>All Restaurants</span>
@@ -30,42 +30,42 @@
     />
   </div>
 </div>
-<div class="display-items-container">
+<div class="display-card-container">
   <span class="title">{{ "signature dish of :" | uppercase }}</span>
-  <div class="items-container">
-    <div class="item dish-container">
+  <div class="card-container">
+    <div class="card dish-container">
       <span class="restaurant-title">Tiger Lilly</span>
-      <app-item
+      <app-card
         type="dish"
-        itemName="Pad Ki Mao"
+        name="Pad Ki Mao"
         description="Shrimps, Glass Noodles, Kemiri Nuts, Shallots, 
       Lemon Grass, Magic 
       Chili Brown Coconut"
         imgSrc="../../assets/images/dishes/pad-ki-mao.jpg"
         price="88"
-      ></app-item>
+      ></app-card>
     </div>
-    <div class="item dish-container">
+    <div class="card dish-container">
       <span class="restaurant-title">Kab Kem</span>
-      <app-item
+      <app-card
         type="dish"
-        itemName="Garbanzo Frito"
+        name="Garbanzo Frito"
         description="Polenta fingers, veal cheek,
       magic chili cured lemon
       cream, yellow laksa"
         imgSrc="../../assets/images/dishes/garbanzo.jpg"
         price="98"
-      ></app-item>
+      ></app-card>
     </div>
-    <div class="item dish-container">
+    <div class="card dish-container">
       <span class="restaurant-title">Popina</span>
-      <app-item
+      <app-card
         type="dish"
-        itemName="Smoked Pizza"
+        name="Smoked Pizza"
         description='Basil dough, cashew "butter", demi-glace, bison & radish'
         imgSrc="../../assets/images/dishes/pizza.jpg"
         price="65"
-      ></app-item>
+      ></app-card>
     </div>
   </div>
 </div>
@@ -107,27 +107,27 @@
 <div class="chef-restaurants-container">
   <span class="chef-restaurants-title">Yossi's restaurants :</span>
   <div>
-    <app-item
+    <app-card
       class="chef-restaurant"
       type="restaurant"
       size="small"
-      itemName="Ozna"
+      name="Ozna"
       imgSrc="../../../assets/images/restaurants/ozna.jpg"
-    ></app-item>
-    <app-item
+    ></app-card>
+    <app-card
       class="chef-restaurant"
       size="small"
       type="restaurant"
-      itemName="Kitchen Market"
+      name="Kitchen Market"
       imgSrc="../../../assets/images/restaurants/kitchen-market.jpg"
-    ></app-item>
-    <app-item
+    ></app-card>
+    <app-card
       size="small"
       class="chef-restaurant"
       type="restaurant"
-      itemName="Mashya"
+      name="Mashya"
       imgSrc="../../../assets/images/restaurants/mashya.jpg"
-    ></app-item>
+    ></app-card>
   </div>
 </div>
 <div class="about-container">

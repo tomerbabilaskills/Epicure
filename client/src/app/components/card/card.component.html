@@ -1,7 +1,7 @@
-<img src="{{ imgSrc }}" alt="{{ itemName }}" />
+<img [src]="imgSrc" [alt]="name" />
 <div class="information-container">
   <span class="{{ size === 'big' ? 'big-title' : 'small-title' }} title">{{
-    itemName
+    name
   }}</span>
   <span class="description">{{ description }}</span>
   <div *ngIf="this.type === 'dish'">
