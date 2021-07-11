@@ -11,7 +11,7 @@ import { IRestaurant } from 'src/app/interfaces';
 })
 export class PopularRestaurantComponent implements OnInit {
   data: IRestaurant[] = [];
-  showMoreSrc: string = '../../../assets/images/all-restaurants-arrows.svg';
+  showMoreSrc: string = '../../../assets/images/icons/arrows-icon.svg';
 
   constructor(private restaurantService: RestaurantService) {}
 

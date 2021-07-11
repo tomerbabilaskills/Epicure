@@ -11,7 +11,7 @@ import { IChefRestaurant } from 'src/app/interfaces';
 })
 export class ChefComponent implements OnInit {
   data: IChefRestaurant[] = [];
-  chefImgSrc: string = '../../../assets/images/untitled-1.jpg';
+  chefImgSrc: string = '../../../assets/images/chef.jpg';
   constructor(private restaurantService: RestaurantService) {}
 
   ngOnInit(): void {

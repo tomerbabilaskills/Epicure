@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   appStoreIconSrc: string = '../../../assets/images/icons/app-store.svg';
   googlePlayIconSrc: string = '../../../assets/images/icons/google-play.svg';
-  aboutLogoSrc: string = '../../../assets/logo/about-logo.jpg';
+  aboutLogoSrc: string = '../../../assets/images/logo/about-logo.jpg';
   constructor() {}
 
   ngOnInit(): void {}
