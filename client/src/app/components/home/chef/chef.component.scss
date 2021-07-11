@@ -1,11 +1,13 @@
+@use '../../../../assets/styles/base';
+
 .main-container {
   padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   .title {
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: base.$font-size-l;
+    letter-spacing: base.$letter-spacing-xl;
     padding: 40px;
   }
   .info-container {
@@ -26,16 +28,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 40px;
-        letter-spacing: 1.5px;
-        font-family: HelveticaNeue;
+        font-size: base.$font-size-xxl;
+        letter-spacing: base.$letter-spacing-m;
+        font-family: base.$secondary-font;
       }
     }
     .description {
       max-width: 540px;
       text-align: justify;
-      font-size: 25px;
-      letter-spacing: 1px;
+      font-size: base.$font-size-m;
+      letter-spacing: base.$letter-spacing-xs;
       margin-left: 70px;
     }
   }
@@ -47,9 +49,9 @@
   margin-left: 200px;
   margin-bottom: 115px;
   .restaurants-title {
-    font-size: 30px;
+    font-size: base.$font-size-l;
+    letter-spacing: base.$letter-spacing-s;
     padding-bottom: 30px;
-    letter-spacing: 1.25px;
   }
   .restaurant {
     &:not(:last-child) {

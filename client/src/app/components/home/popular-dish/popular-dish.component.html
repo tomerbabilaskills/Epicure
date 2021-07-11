@@ -1,7 +1,7 @@
 <span class="title">{{ "signature dish of :" | uppercase }}</span>
 <div class="card-container">
   <div *ngFor="let card of data" class="card dish-container">
-    <span class="restaurant-title">Tiger Lilly</span>
+    <span class="restaurant-title">{{ card.restaurant }}</span>
     <app-card
       type="dish"
       [name]="card.name"

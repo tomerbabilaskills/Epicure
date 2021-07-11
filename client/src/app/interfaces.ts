@@ -20,4 +20,5 @@ export interface IDish {
   imgSrc: string;
   price: string;
   types: string[];
+  restaurant: string;
 }

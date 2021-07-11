@@ -1,6 +1,8 @@
+@use '../../../assets/styles/base';
+
 :host {
   display: inline-block;
-  background-color: #f9f4ea;
+  background-color: base.$secondary-color;
   .information-container {
     display: flex;
     flex-direction: column;
@@ -8,25 +10,25 @@
     max-width: 360px;
     height: 135px;
     .title {
-      font-family: HelveticaNeue;
+      font-family: base.$secondary-font;
       font-weight: normal;
       max-width: 200px;
       text-align: center;
     }
     .big-title {
-      font-size: 40px;
-      letter-spacing: 2.5px;
+      font-size: base.$font-size-xxl;
+      letter-spacing: base.$letter-spacing-xl;
       margin-top: 30px;
     }
     .small-title {
-      letter-spacing: 2px;
-      font-size: 30px;
+      letter-spacing: base.$letter-spacing-xl;
+      font-size: base.$font-size-l;
       margin-top: 15px;
     }
     .description {
       font-size: 24px;
       margin-bottom: auto;
-      letter-spacing: 1.5px;
+      letter-spacing: base.$letter-spacing-m;
       max-width: 292px;
     }
     .type {
@@ -38,12 +40,12 @@
       align-items: center;
       margin: 10px;
       .line {
-        border-top: 1px #979797 solid;
+        border-top: 1px base.$border-color solid;
         width: 110px;
       }
       .price {
         margin: 10px;
-        font-size: 25px;
+        font-size: base.$font-size-m;
       }
     }
   }

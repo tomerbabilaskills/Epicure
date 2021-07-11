@@ -1,9 +1,12 @@
 // colors
 $primary-color: #fafafa;
 $secondary-color: #f9f4ea;
+$border-color: #979797;
 
 // font sizes
 $font-size-logo: 27px;
+$font-size-store-m: 16px;
+$font-size-store-s: 13px;
 $font-size-xxl: 40px;
 $font-size-xl: 35px;
 $font-size-l: 30px;
@@ -12,11 +15,13 @@ $font-size-s: 22px;
 $font-size-xs: 18px;
 
 // letter spacing
+$letter-spacing-logo: 1.35px;
 $letter-spacing-xl: 2px;
 $letter-spacing-l: 1.75px;
 $letter-spacing-m: 1.5px;
 $letter-spacing-s: 1.25px;
+$letter-spacing-xs: 1px;
 
 // font family
-$primary-font: HelveticaNeue;
-$secondary-font: HelveticaNeue-Thin;
+$primary-font: HelveticaNeue-Thin;
+$secondary-font: HelveticaNeue;

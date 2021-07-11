@@ -1,5 +1,7 @@
+@use './assets/styles/base';
+
 /* You can add global styles to this file, and also import other style files */
 body {
-  font-family: HelveticaNeue-Thin;
+  font-family: base.$primary-font;
   margin: 0;
 }

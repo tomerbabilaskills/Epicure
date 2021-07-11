@@ -1,3 +1,5 @@
+@use '../../../assets/styles/base';
+
 :host {
   display: flex;
   align-items: center;
@@ -10,15 +12,15 @@
       display: flex;
       align-items: center;
       .name {
-        font-size: 27px;
-        letter-spacing: 1.35px;
+        font-size: base.$font-size-logo;
+        letter-spacing: base.$letter-spacing-logo;
         margin: 0 10px;
       }
     }
     .link {
       text-decoration: none;
       color: inherit;
-      font-size: 18px;
+      font-size: base.$font-size-xs;
       font-weight: lighter;
       &:not(:last-child) {
         margin-right: 10px;
@@ -34,13 +36,19 @@
       border-radius: 5px;
       input {
         border: 0;
-        font-size: 18px;
+        font-size: base.$font-size-xs;
         box-sizing: border-box;
-        width: 300px;
+        width: 330px;
         padding: 5px;
         margin-left: 5px;
+        &::-webkit-input-placeholder {
+          font-family: base.$primary-font;
+          letter-spacing: base.$letter-spacing-s;
+          font-size: base.$font-size-xs;
+        }
       }
       img {
+        margin-right: 10px;
         padding: 5px;
       }
     }

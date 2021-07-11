@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/base';
+
 .bg-img {
   background-image: url(../../../../assets/images/background.jpg);
   background-repeat: no-repeat;
@@ -11,10 +13,10 @@
     margin: 240px 330px;
     padding: 40px;
     span {
-      font-size: 35px;
+      font-size: base.$font-size-xl;
       max-width: 450px;
       text-align: center;
-      letter-spacing: 2px;
+      letter-spacing: base.$letter-spacing-xl;
       padding-bottom: 18px;
     }
     .search-container {
@@ -24,12 +26,17 @@
       width: 35vw;
       input {
         border: 0;
-        font-size: 18px;
+        font-size: base.$font-size-xs;
         box-sizing: border-box;
-        width: 300px;
+        width: 100%;
         padding: 10px;
         padding-left: 0;
         background: transparent;
+        &::-webkit-input-placeholder {
+          font-family: base.$primary-font;
+          letter-spacing: base.$letter-spacing-l;
+          font-size: base.$font-size-s;
+        }
       }
       img {
         padding: 10px 15px;

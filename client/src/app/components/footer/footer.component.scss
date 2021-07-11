@@ -1,9 +1,11 @@
+@use '../../../assets/styles/base';
+
 :host {
   display: flex;
   justify-content: center;
   span {
     margin: 37px 45px;
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: base.$font-size-xs;
+    letter-spacing: base.$letter-spacing-xs;
   }
 }
