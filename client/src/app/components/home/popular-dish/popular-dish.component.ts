@@ -2,13 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { RestaurantService } from 'src/app/services/restaurant.service';
 
-interface IDish {
-  name: string;
-  description: string;
-  imgSrc: string;
-  price: string;
-  types: string[];
-}
+import { IDish } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-popular-dish',

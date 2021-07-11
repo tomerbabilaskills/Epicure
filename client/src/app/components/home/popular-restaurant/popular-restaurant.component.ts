@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { RestaurantService } from 'src/app/services/restaurant.service';
 
-interface IRestaurant {
-  name: string;
-  description: string;
-  imgSrc: string;
-}
+import { IRestaurant } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-popular-restaurant',

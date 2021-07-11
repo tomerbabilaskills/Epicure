@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-interface IIcon {
-  name: string;
-  path: string;
-}
+import { IIcon } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-icons',
