@@ -14,25 +14,12 @@
   }}</span>
   <div class="items-container">
     <app-item
+      *ngFor="let item of data.restaurants"
       class="item"
       type="restaurant"
-      itemName="Claro"
-      description="Ran Shmueli"
-      imgSrc="../../assets/images/restaurants/claro.jpg"
-    ></app-item>
-    <app-item
-      class="item"
-      type="restaurant"
-      itemName="Lumina"
-      description="Meir Adoni"
-      imgSrc="../../assets/images/restaurants/mizlala-gret-mullet-fillet.jpg"
-    ></app-item>
-    <app-item
-      class="item"
-      type="restaurant"
-      itemName="Tiger Lilly"
-      description="Yanir Green"
-      imgSrc="../../assets/images/restaurants/tiger-lili.jpg"
+      [itemName]="item.name"
+      [description]="item.description"
+      [imgSrc]="item.imgSrc"
     ></app-item>
   </div>
   <div class="show-more">
@@ -143,10 +130,10 @@
     ></app-item>
   </div>
 </div>
-<div>
-  <span>{{ "about us :" | uppercase }}</span>
-  <div>
-    <div>
+<div class="about-container">
+  <div class="about-description-container">
+    <span class="about-title">{{ "about us :" | uppercase }}</span>
+    <div class="about-description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel
       justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget
       blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta.
@@ -154,6 +141,24 @@
       consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu
       ipsum. Cras porta malesuada eros.
     </div>
+    <div class="about-download-button-container">
+      <div class="about-download-button">
+        <img src="../../../assets/images/icons/app-store.svg" />
+        <div class="about-download-text">
+          <span class="download-text">Download on the</span>
+          <span class="store-name">App Store</span>
+        </div>
+      </div>
+      <div class="about-download-button">
+        <img src="../../../assets/images/icons/google-play.svg" />
+        <div class="about-download-text">
+          <span class="download-text">Get it on</span>
+          <span class="store-name">Google Play</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-image-container">
     <img src="../../../assets/logo/about-logo.jpg" alt="epicure" />
   </div>
 </div>

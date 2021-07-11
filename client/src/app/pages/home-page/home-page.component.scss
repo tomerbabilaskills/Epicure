@@ -41,8 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  margin: 0 170px;
+  margin: 100px 170px 0;
   .title {
     font-size: 30px;
     letter-spacing: 1.25px;
@@ -164,5 +163,56 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+}
+
+.about-container {
+  display: flex;
+  background-color: #fafafa;
+  .about-description-container {
+    max-width: 570px;
+    margin: 65px 180px 60px 200px;
+    .about-title {
+      font-size: 30px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .about-description {
+      margin: 20px 0;
+      font-size: 22px;
+      letter-spacing: 1.5px;
+    }
+    .about-download-button-container {
+      display: flex;
+      .about-download-button {
+        border: 1px black solid;
+        border-radius: 5px;
+        display: flex;
+        width: 180px;
+        .about-download-text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: 1.25px;
+          .download-text {
+            font-size: 13px;
+          }
+          .store-name {
+            font-size: 16px;
+          }
+        }
+        img {
+          margin: 14px;
+        }
+        // margin-top: 20px;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .about-image-container {
+    margin: 180px 0;
   }
 }
