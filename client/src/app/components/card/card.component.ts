@@ -11,10 +11,14 @@ export class CardComponent implements OnInit {
   @Input() description!: string;
   @Input() imgSrc!: string;
   @Input() price?: string;
-  @Input() dishTypes?: string;
+  @Input() dishTypes?: string[];
   @Input() size: string = 'big';
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  getSrc(type: string): string {
+    return `../../../assets/images/icons/${type}-icon.svg`;
+  }
 }

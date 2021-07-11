@@ -11,6 +11,7 @@ import { IDish } from 'src/app/interfaces';
 })
 export class PopularDishComponent implements OnInit {
   data: IDish[] = [];
+
   constructor(private restaurantService: RestaurantService) {}
 
   ngOnInit(): void {

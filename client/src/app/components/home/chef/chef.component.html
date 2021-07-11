@@ -18,25 +18,12 @@
   <span class="restaurants-title">Yossi's restaurants :</span>
   <div>
     <app-card
-      class="restaurant"
-      type="restaurant"
-      size="small"
-      name="Ozna"
-      imgSrc="../../../assets/images/restaurants/ozna.jpg"
-    ></app-card>
-    <app-card
-      class="restaurant"
-      size="small"
-      type="restaurant"
-      name="Kitchen Market"
-      imgSrc="../../../assets/images/restaurants/kitchen-market.jpg"
-    ></app-card>
-    <app-card
       size="small"
       class="restaurant"
       type="restaurant"
-      name="Mashya"
-      imgSrc="../../../assets/images/restaurants/mashya.jpg"
+      *ngFor="let restaurant of data"
+      [name]="restaurant.name"
+      [imgSrc]="restaurant.imgSrc"
     ></app-card>
   </div>
 </div>

@@ -51,6 +51,20 @@ export class RestaurantService {
         imgSrc: '../../assets/images/dishes/pizza.jpg',
       },
     ],
+    chefRestaurants: [
+      {
+        name: 'Ozna',
+        imgSrc: '../../../assets/images/restaurants/ozna.jpg',
+      },
+      {
+        name: 'Kitchen Market',
+        imgSrc: '../../../assets/images/restaurants/kitchen-market.jpg',
+      },
+      {
+        name: 'Mashya',
+        imgSrc: '../../../assets/images/restaurants/mashya.jpg',
+      },
+    ],
   };
   constructor() {}
 }

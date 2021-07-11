@@ -10,7 +10,10 @@ import { IIcon } from 'src/app/interfaces';
 export class IconsComponent implements OnInit {
   icons: IIcon[] = [
     { name: 'Spicy', path: '../../../assets/images/icons/spicy-icon.svg' },
-    { name: 'Vegetarian', path: '../../../assets/images/icons/vegetarian.svg' },
+    {
+      name: 'Vegetarian',
+      path: '../../../assets/images/icons/vegetarian-icon.svg',
+    },
     { name: 'Vegan', path: '../../../assets/images/icons/vegan-icon.svg' },
   ];
 

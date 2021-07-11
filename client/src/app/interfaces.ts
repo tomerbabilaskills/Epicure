@@ -4,6 +4,11 @@ export interface IRestaurant {
   imgSrc: string;
 }
 
+export interface IChefRestaurant {
+  name: string;
+  imgSrc: string;
+}
+
 export interface IIcon {
   name: string;
   path: string;
