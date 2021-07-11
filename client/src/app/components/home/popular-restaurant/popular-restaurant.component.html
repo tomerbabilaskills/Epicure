@@ -1,0 +1,17 @@
+<span class="title">{{
+  "the popular restaurants in epicure :" | uppercase
+}}</span>
+<div class="card-container">
+  <app-card
+    *ngFor="let card of data"
+    class="card"
+    type="restaurant"
+    [name]="card.name"
+    [description]="card.description"
+    [imgSrc]="card.imgSrc"
+  ></app-card>
+</div>
+<div class="show-more">
+  <span>All Restaurants</span>
+  <img [src]="showMoreSrc" alt="all restaurants" />
+</div>

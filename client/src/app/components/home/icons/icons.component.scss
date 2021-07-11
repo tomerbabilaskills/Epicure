@@ -1,0 +1,26 @@
+:host {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  .title {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .container {
+    display: flex;
+    align-items: flex-end;
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      .icon-title {
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

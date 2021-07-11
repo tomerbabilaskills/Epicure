@@ -1,0 +1,42 @@
+<div class="main-container">
+  <span class="title">{{ "chef of the week :" | uppercase }}</span>
+  <div class="info-container">
+    <div class="img-container">
+      <img [src]="chefImgSrc" alt="Yosi Shitrit" />
+      <div>Yossi Shitrit</div>
+    </div>
+    <span class="description"
+      >Chef Yossi Shitrit has been living and breathing his culinary dreams for
+      more than two decades, including running the kitchen in his first
+      restaurant, the fondly-remembered Violet, located in Moshav Udim.
+      Shitrit's creativity and culinary acumen born of long experience are
+      expressed in the every detail of each and every dish.</span
+    >
+  </div>
+</div>
+<div class="restaurants-container">
+  <span class="restaurants-title">Yossi's restaurants :</span>
+  <div>
+    <app-card
+      class="restaurant"
+      type="restaurant"
+      size="small"
+      name="Ozna"
+      imgSrc="../../../assets/images/restaurants/ozna.jpg"
+    ></app-card>
+    <app-card
+      class="restaurant"
+      size="small"
+      type="restaurant"
+      name="Kitchen Market"
+      imgSrc="../../../assets/images/restaurants/kitchen-market.jpg"
+    ></app-card>
+    <app-card
+      size="small"
+      class="restaurant"
+      type="restaurant"
+      name="Mashya"
+      imgSrc="../../../assets/images/restaurants/mashya.jpg"
+    ></app-card>
+  </div>
+</div>

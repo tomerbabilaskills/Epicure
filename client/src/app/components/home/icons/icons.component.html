@@ -1,0 +1,7 @@
+<span class="title">{{ "the meaning of our icons :" | uppercase }}</span>
+<div class="container">
+  <div *ngFor="let icon of icons" class="icon">
+    <img [src]="icon.path" [alt]="icon.name" />
+    <span class="icon-title">{{ icon.name }}</span>
+  </div>
+</div>
