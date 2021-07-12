@@ -18,7 +18,7 @@ export interface IDish {
   name: string;
   description: string;
   imgSrc: string;
-  price: string;
+  price: number;
   types: string[];
   restaurant: string;
 }

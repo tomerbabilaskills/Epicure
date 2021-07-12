@@ -29,7 +29,7 @@ export class RestaurantService {
         name: 'Pad Ki Mao',
         description:
           'Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut',
-        price: '88',
+        price: 88,
         types: ['spicy'],
         imgSrc: '../../assets/images/dishes/pad-ki-mao.jpg',
       },
@@ -38,7 +38,7 @@ export class RestaurantService {
         name: 'Garbanzo Frito',
         description:
           'Polenta fingers, veal cheek,magic chili cured lemoncream, yellow laksa',
-        price: '98',
+        price: 98,
         types: [],
         imgSrc: '../../assets/images/dishes/garbanzo.jpg',
       },
@@ -46,7 +46,7 @@ export class RestaurantService {
         restaurant: 'Popina',
         name: 'Smoked Pizza',
         description: 'Basil dough, cashew "butter", demi-glace, bison & radish',
-        price: '65',
+        price: 65,
         types: ['vegan'],
         imgSrc: '../../assets/images/dishes/pizza.jpg',
       },
