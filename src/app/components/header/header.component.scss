@@ -30,28 +30,6 @@
   .right-container {
     display: flex;
     align-items: center;
-    .search-container {
-      display: flex;
-      border: 1px black solid;
-      border-radius: 5px;
-      input {
-        border: 0;
-        font-size: base.$font-size-xs;
-        box-sizing: border-box;
-        width: 330px;
-        padding: 5px;
-        margin-left: 5px;
-        &::-webkit-input-placeholder {
-          font-family: base.$primary-font;
-          letter-spacing: base.$letter-spacing-s;
-          font-size: base.$font-size-xs;
-        }
-      }
-      img {
-        margin-right: 10px;
-        padding: 5px;
-      }
-    }
     .icon {
       &:not(:first-child) {
         margin-left: 25px;

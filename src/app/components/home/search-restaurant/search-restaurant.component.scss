@@ -23,27 +23,7 @@
       padding-bottom: 18px;
     }
     .search-container {
-      display: flex;
-      border: 1px black solid;
-      border-radius: 5px;
       width: 35vw;
-      input {
-        border: 0;
-        font-size: base.$font-size-xs;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 10px;
-        padding-left: 0;
-        background: transparent;
-        &::-webkit-input-placeholder {
-          font-family: base.$primary-font;
-          letter-spacing: base.$letter-spacing-l;
-          font-size: base.$font-size-s;
-        }
-      }
-      img {
-        padding: 10px 15px;
-      }
     }
   }
 }

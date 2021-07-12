@@ -13,6 +13,7 @@ import { PopularDishComponent } from './components/home/popular-dish/popular-dis
 import { IconsComponent } from './components/home/icons/icons.component';
 import { ChefComponent } from './components/home/chef/chef.component';
 import { AboutComponent } from './components/home/about/about.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AboutComponent } from './components/home/about/about.component';
     IconsComponent,
     ChefComponent,
     AboutComponent,
+    SearchBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
