@@ -1,14 +1,12 @@
 <span class="title">{{
-  "the popular restaurants in epicure :" | uppercase
+  'the popular restaurants in epicure :' | uppercase
 }}</span>
 <div class="card-container">
   <app-card
     *ngFor="let card of data"
     class="card"
     type="restaurant"
-    [name]="card.name"
-    [description]="card.description"
-    [imgSrc]="card.imgSrc"
+    [data]="card"
   ></app-card>
 </div>
 <div class="show-more">

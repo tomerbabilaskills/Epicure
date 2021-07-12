@@ -1,5 +1,5 @@
 <div class="main-container">
-  <span class="title">{{ "chef of the week :" | uppercase }}</span>
+  <span class="title">{{ 'chef of the week :' | uppercase }}</span>
   <div class="info-container">
     <div class="img-container">
       <img [src]="chefImgSrc" alt="Yosi Shitrit" />
@@ -22,8 +22,7 @@
       class="restaurant"
       type="restaurant"
       *ngFor="let restaurant of data"
-      [name]="restaurant.name"
-      [imgSrc]="restaurant.imgSrc"
+      [data]="restaurant"
     ></app-card>
   </div>
 </div>

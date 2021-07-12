@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { IChefRestaurant, IDish, IRestaurant } from 'src/app/interfaces';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -7,12 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input() type: string = '';
-  @Input() name: string = '';
-  @Input() description: string = '';
-  @Input() imgSrc: string = '';
-  @Input() price?: string;
-  @Input() dishTypes?: string[];
   @Input() size: string = 'big';
+  @Input() data!: IRestaurant | IDish | IChefRestaurant;
 
   constructor() {}
 
@@ -20,5 +18,13 @@ export class CardComponent implements OnInit {
 
   getSrc(type: string): string {
     return `../../../assets/images/icons/${type}-icon.svg`;
+  }
+
+  isDish(object: any): object is IDish {
+    return 'price' in object;
+  }
+
+  isDescription(object: any): object is IRestaurant | IDish {
+    return 'description' in object;
   }
 }

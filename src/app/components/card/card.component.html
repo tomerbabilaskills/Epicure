@@ -1,19 +1,24 @@
-<img [src]="imgSrc" [alt]="name" />
+<img [src]="data.imgSrc" [alt]="data.name" />
 <div class="information-container" [class.dish]="type === 'dish'">
-  <span class="{{ size === 'big' ? 'big-title' : 'small-title' }} card-title">
-    {{ name }}
+  <span
+    [ngClass]="size === 'big' ? 'big-title' : 'small-title'"
+    class="card-title"
+  >
+    {{ data.name }}
   </span>
-  <span class="description">{{ description }}</span>
-  <div *ngIf="type === 'dish'">
+  <span *ngIf="isDescription(data)" class="description">{{
+    data.description
+  }}</span>
+  <div *ngIf="isDish(data)">
     <img
-      *ngFor="let type of dishTypes"
+      *ngFor="let type of data.types"
       [src]="getSrc(type)"
       [alt]="type"
       class="type"
     />
     <div class="price-container">
       <div class="line"></div>
-      <div class="price">₪{{ price }}</div>
+      <div class="price">₪{{ data.price }}</div>
       <div class="line"></div>
     </div>
   </div>
