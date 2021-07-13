@@ -1,5 +1,10 @@
 <img [src]="data.imgSrc" [alt]="data.name" />
-<div class="information-container" [class.dish]="type === 'dish'">
+<div
+  class="information-container"
+  [class.dish]="type === 'dish'"
+  fxLayout="column"
+  fxLayoutAlign="start center"
+>
   <span
     [ngClass]="size === 'big' ? 'big-title' : 'small-title'"
     class="card-title"
@@ -16,7 +21,7 @@
       [alt]="type"
       class="type"
     />
-    <div class="price-container">
+    <div class="price-container" fxLayoutAlign="center center">
       <div class="line"></div>
       <div class="price">₪ {{ data.price | number }}</div>
       <div class="line"></div>

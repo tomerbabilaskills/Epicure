@@ -1,16 +1,9 @@
 @use '../../../assets/styles/base';
 
 :host {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 14px 123px;
   .left-container {
-    display: flex;
-    align-items: center;
     .logo-container {
-      display: flex;
-      align-items: center;
       .name {
         font-size: base.$font-size-logo;
         letter-spacing: base.$letter-spacing-logo;
@@ -28,8 +21,6 @@
     }
   }
   .right-container {
-    display: flex;
-    align-items: center;
     .icon {
       &:not(:first-child) {
         margin-left: 25px;

@@ -2,17 +2,9 @@
 
 :host {
   background-color: base.$primary-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 40px;
   .container {
-    display: flex;
-    align-items: flex-end;
     .icon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       padding: 0 40px;
       .icon-title {
         font-size: base.$font-size-m;

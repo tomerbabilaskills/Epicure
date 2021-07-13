@@ -1,9 +1,9 @@
-<div class="main-container">
+<div class="main-container" fxLayout="column" fxLayoutAlign="start center">
   <span class="title">{{ 'chef of the week :' | uppercase }}</span>
-  <div class="info-container">
-    <div class="img-container">
+  <div class="info-container" fxLayout="row">
+    <div class="img-container" fxLayoutAlign="center">
       <img [src]="chefImgSrc" alt="Yosi Shitrit" />
-      <div>Yossi Shitrit</div>
+      <span fxLayoutAlign="center center">Yossi Shitrit</span>
     </div>
     <span class="description"
       >Chef Yossi Shitrit has been living and breathing his culinary dreams for
@@ -14,7 +14,7 @@
     >
   </div>
 </div>
-<div class="restaurants-container">
+<div class="restaurants-container" fxLayout="column">
   <span class="restaurants-title">Yossi's restaurants :</span>
   <div>
     <app-card

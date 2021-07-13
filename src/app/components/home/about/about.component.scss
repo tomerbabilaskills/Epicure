@@ -1,7 +1,6 @@
 @use '../../../../assets/styles/base';
 
 :host {
-  display: flex;
   background-color: base.$primary-color;
   .description-container {
     max-width: 570px;
@@ -16,17 +15,11 @@
       letter-spacing: base.$letter-spacing-m;
     }
     .download-button-container {
-      display: flex;
       .download-button {
         border: 1px black solid;
         border-radius: 5px;
-        display: flex;
         width: 180px;
         .download-text-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
           letter-spacing: base.$letter-spacing-s;
           .download-text {
             font-size: base.$font-size-store-s;

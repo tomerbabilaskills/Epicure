@@ -1,6 +1,11 @@
 <span class="title">{{ 'signature dish of :' | uppercase }}</span>
-<div class="card-container">
-  <div *ngFor="let card of data" class="card dish-container">
+<div class="card-container" fxLayout="row">
+  <div
+    *ngFor="let card of data"
+    class="card dish-container"
+    fxLayout="column"
+    fxLayoutAlign="start center"
+  >
     <span class="restaurant-title">{{ card.restaurant }}</span>
     <app-card type="dish" [data]="card"></app-card>
   </div>

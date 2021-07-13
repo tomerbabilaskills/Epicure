@@ -1,13 +1,13 @@
-<div class="left-container">
-  <div class="logo-container">
+<div class="left-container" fxLayoutAlign="center center">
+  <div class="logo-container" fxLayoutAlign="center center">
     <img [src]="logoSrc" alt="logo" class="logo" />
     <span class="link name">EPICURE</span>
   </div>
   <a class="link" href="#">Restaurants</a>
   <a class="link" href="#">Chefs</a>
 </div>
-<div class="right-container">
-  <app-search-bar>
+<div class="right-container" fxLayoutAlign="center center">
+  <app-search-bar fxLayout="row">
     <input class="small" placeholder="Search for restaurant cuisine, chef" />
     <img [src]="searchIconSrc" alt="search" />
   </app-search-bar>

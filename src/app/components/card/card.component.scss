@@ -3,10 +3,8 @@
 :host {
   display: inline-block;
   background-color: base.$secondary-color;
+  text-align: center;
   .information-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 360px;
     height: 135px;
     .card-title {
@@ -19,7 +17,7 @@
     .big-title {
       font-size: base.$font-size-xxl;
       letter-spacing: base.$letter-spacing-xl;
-      margin-top: 30px;
+      margin-top: 15px;
     }
     .small-title {
       letter-spacing: base.$letter-spacing-xl;
@@ -37,8 +35,6 @@
       height: 30px;
     }
     .price-container {
-      display: flex;
-      align-items: center;
       margin: 10px;
       .line {
         border-top: 1px base.$border-color solid;

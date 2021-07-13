@@ -7,7 +7,7 @@ export class RestaurantService {
   mockData = {
     restaurants: [
       {
-        name: 'claro',
+        name: 'Claro',
         description: 'Ran Shmueli',
         imgSrc: '../../assets/images/restaurants/claro.jpg',
       },
