@@ -15,6 +15,7 @@ import { IconsComponent } from './components/home/icons/icons.component';
 import { ChefComponent } from './components/home/chef/chef.component';
 import { AboutComponent } from './components/home/about/about.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { RouteButtonsMobileComponent } from './components/home/route-buttons-mobile/route-buttons-mobile.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     ChefComponent,
     AboutComponent,
     SearchBarComponent,
+    RouteButtonsMobileComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FlexLayoutModule],
   providers: [],

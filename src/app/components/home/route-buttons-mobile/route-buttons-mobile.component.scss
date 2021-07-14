@@ -1,0 +1,21 @@
+@use '../../../../assets/styles/base';
+
+.container {
+  padding: 40px;
+  background-color: base.$primary-color;
+  button {
+    background-color: base.$route-buttons-color;
+    border: none;
+    padding: 14px;
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+}
+
+.container.desktop {
+  margin: 0;
+  button {
+    display: none;
+  }
+}
