@@ -4,12 +4,19 @@
   border: 1px black solid;
   border-radius: 5px;
   padding-left: 5px;
+  .desktop-big {
+    padding-bottom: 0 !important;
+    &::-webkit-input-placeholder {
+      letter-spacing: base.$letter-spacing-l !important;
+      font-size: base.$font-size-s !important;
+    }
+  }
   .big {
     width: 100%;
-    background: transparent;
+    padding-bottom: 5px;
     &::-webkit-input-placeholder {
-      letter-spacing: base.$letter-spacing-l;
-      font-size: base.$font-size-s;
+      letter-spacing: base.$letter-spacing-xs;
+      font-size: base.$font-size-m-m;
     }
   }
   .small {
@@ -22,8 +29,9 @@
   input {
     width: 330px;
     border: none;
-    font-size: base.$font-size-xs;
     box-sizing: border-box;
+    background: transparent;
+    font-size: base.$font-size-xs;
     &::-webkit-input-placeholder {
       font-family: base.$primary-font;
     }
@@ -33,6 +41,12 @@
     padding: 5px;
   }
   .big-img {
+    width: 16px;
+    height: 16px;
+    padding: 9px;
+    margin: 0;
+  }
+  .desktop-big-img {
     width: 31px;
     height: 31px;
     padding: 10px 15px;

@@ -1,25 +1,40 @@
 @use '../../../../assets/styles/base';
 
-.bg-img {
-  background-image: url(../../../../assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  overflow: auto;
+.desktop.bg-img {
   .front {
-    background-color: rgba(255, 255, 255, 0.88);
     margin: 240px 330px;
     padding: 40px;
     span {
       font-size: base.$font-size-xl;
       max-width: 450px;
-      text-align: center;
       letter-spacing: base.$letter-spacing-xl;
       padding-bottom: 18px;
     }
     .search-container {
       width: 35vw;
+    }
+  }
+}
+
+.bg-img {
+  background-image: url(../../../../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  overflow: auto;
+  .front {
+    background-color: rgba(255, 255, 255, 0.88);
+    margin: 70px 20px;
+    padding: 20px;
+    span {
+      font-size: base.$font-size-m-l;
+      max-width: 220px;
+      text-align: center;
+      letter-spacing: base.$letter-spacing-xs;
+      padding-bottom: 13px;
+    }
+    .search-container {
+      width: 75vw;
     }
   }
 }
