@@ -37,9 +37,13 @@
     letter-spacing: base.$letter-spacing-s;
     padding-bottom: 30px;
   }
-  .restaurant {
-    &:not(:last-child) {
-      margin-right: 20px;
+  .card-container {
+    width: 100%;
+    max-width: 700px;
+    .restaurant {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
   }
 }

@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -16,6 +20,14 @@ import { ChefComponent } from './components/home/chef/chef.component';
 import { AboutComponent } from './components/home/about/about.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { RouteButtonsMobileComponent } from './components/home/route-buttons-mobile/route-buttons-mobile.component';
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 20,
+  pagination: true,
+  navigation: true,
+};
 
 @NgModule({
   declarations: [
@@ -33,8 +45,13 @@ import { RouteButtonsMobileComponent } from './components/home/route-buttons-mob
     SearchBarComponent,
     RouteButtonsMobileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FlexLayoutModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FlexLayoutModule, SwiperModule],
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

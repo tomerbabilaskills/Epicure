@@ -1,14 +1,14 @@
-<span class="title">{{
-  'the popular restaurants in epicure :' | uppercase
-}}</span>
-<div class="card-container">
+<span class="title" ngClass.gt-sm="desktop-title">
+  {{ 'the popular restaurants in epicure :' | uppercase }}
+</span>
+<swiper class="card-container">
   <app-card
     *ngFor="let card of data"
     class="card"
     type="restaurant"
     [data]="card"
   ></app-card>
-</div>
+</swiper>
 <div class="show-more" fxFlexAlign="end">
   <span>All Restaurants</span>
   <img [src]="showMoreSrc" alt="all restaurants" />

@@ -3,6 +3,7 @@
 :host {
   margin: 85px 170px;
   .card-container {
+    width: 100%;
     .card {
       &:not(:last-child) {
         margin-right: 10px;

@@ -1,9 +1,12 @@
 @use './assets/styles/base';
+@import '~swiper/swiper';
+@import '~swiper/components/pagination/pagination';
 
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: base.$primary-font;
   margin: 0;
+  --swiper-theme-color: #000;
 }
 
 .title {
@@ -16,4 +19,20 @@ body {
   font-size: base.$font-size-l;
   letter-spacing: base.$letter-spacing-xl;
   padding: 40px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
 }
