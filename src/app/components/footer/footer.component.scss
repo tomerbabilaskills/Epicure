@@ -1,7 +1,19 @@
 @use '../../../assets/styles/base';
 
-span {
-  margin: 37px 45px;
-  font-size: base.$font-size-xs;
-  letter-spacing: base.$letter-spacing-xs;
+.desktop {
+  margin: 0;
+  span {
+    margin: 37px 45px;
+    font-size: base.$font-size-xs;
+    letter-spacing: base.$letter-spacing-xs;
+  }
+}
+
+footer {
+  margin: 10px 0;
+  span {
+    margin: 10px;
+    letter-spacing: base.$letter-spacing-m-s;
+    font-size: base.$font-size-m-s;
+  }
 }
