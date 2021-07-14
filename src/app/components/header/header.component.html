@@ -1,16 +1,32 @@
-<div class="left-container" fxLayoutAlign="center center">
-  <div class="logo-container" fxLayoutAlign="center center">
-    <img [src]="logoSrc" alt="logo" class="logo" />
-    <span class="link name">EPICURE</span>
+<header
+  fxLayoutAlign="space-between center"
+  class="header"
+  ngClass.gt-sm="desktop"
+>
+  <div class="left-container" fxLayoutAlign="center center">
+    <img [src]="menuIconSrc" alt="menu" class="menu icon" />
+    <div class="logo-container" fxLayoutAlign="center center">
+      <img [src]="logoSrc" alt="logo" class="logo" />
+      <span class="link name">EPICURE</span>
+    </div>
+    <a class="link" href="#">Restaurants</a>
+    <a class="link" href="#">Chefs</a>
   </div>
-  <a class="link" href="#">Restaurants</a>
-  <a class="link" href="#">Chefs</a>
-</div>
-<div class="right-container" fxLayoutAlign="center center">
-  <app-search-bar fxLayout="row">
-    <input class="small" placeholder="Search for restaurant cuisine, chef" />
-    <img [src]="searchIconSrc" alt="search" />
-  </app-search-bar>
-  <img class="icon" [src]="userIconSrc" alt="user" />
-  <img class="icon" [src]="bagIconSrc" alt="bag" />
-</div>
+  <div class="middle-container">
+    <img [src]="logoSrc" alt="logo" class="logo" />
+  </div>
+  <div class="right-container" fxLayoutAlign="center center">
+    <div class="search-container">
+      <app-search-bar fxLayout="row">
+        <input
+          class="small"
+          placeholder="Search for restaurant cuisine, chef"
+        />
+        <img [src]="searchIconSrc" alt="search" />
+      </app-search-bar>
+    </div>
+    <img class="icon search-icon" [src]="searchIconSrc" alt="search" />
+    <img class="icon" [src]="userIconSrc" alt="user" />
+    <img class="icon" [src]="bagIconSrc" alt="bag" />
+  </div>
+</header>

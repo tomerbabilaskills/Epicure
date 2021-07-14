@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
   searchIconSrc: string = '../../../assets/images/icons/search-icon.svg';
   userIconSrc: string = '../../../assets/images/icons/user-icon.svg';
   bagIconSrc: string = '../../../assets/images/icons/bag-icon.svg';
+  menuIconSrc: string = '../../../assets/images/icons/menu-icon.svg';
   logoSrc: string = '../../../assets/images/logo/logo.jpg';
 
   constructor() {}
