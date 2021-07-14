@@ -1,7 +1,7 @@
 @use '../../../../assets/styles/base';
 
-:host {
-  background-color: base.$primary-color;
+.main-container.desktop {
+  text-align: initial;
   .description-container {
     max-width: 570px;
     margin: 65px 180px 60px 200px;
@@ -16,8 +16,7 @@
     }
     .download-button-container {
       .download-button {
-        border: 1px black solid;
-        border-radius: 5px;
+        padding: 0;
         width: 180px;
         .download-text-container {
           letter-spacing: base.$letter-spacing-s;
@@ -29,6 +28,8 @@
           }
         }
         img {
+          width: auto;
+          height: auto;
           margin: 14px;
         }
         &:not(:last-child) {
@@ -36,8 +37,61 @@
         }
       }
     }
+    .image-container {
+      display: none;
+    }
   }
-  .image-container {
+  .image-container-desktop {
+    display: block;
     margin: 180px 0;
+  }
+}
+
+.main-container {
+  background-color: base.$primary-color;
+  text-align: center;
+  .description-container {
+    margin-top: 25px;
+    margin-bottom: 65px;
+    .description {
+      margin: 7px 35px;
+      font-size: base.$font-size-m-title;
+      letter-spacing: base.$letter-spacing-xs;
+    }
+    .download-button-container {
+      .download-button {
+        padding: 3px 0;
+        border: 0.5px black solid;
+        border-radius: 5px;
+        width: 130px;
+        .download-text-container {
+          letter-spacing: base.$letter-spacing-xs;
+          .download-text {
+            font-size: base.$font-size-m-xs;
+          }
+          .store-name {
+            font-size: base.$font-size-m-s;
+          }
+        }
+        img {
+          width: 15px;
+          height: 15px;
+          margin-right: 15px;
+        }
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+    .image-container {
+      margin: 35px;
+      img {
+        width: 135px;
+        height: 130px;
+      }
+    }
+  }
+  .image-container-desktop {
+    display: none;
   }
 }

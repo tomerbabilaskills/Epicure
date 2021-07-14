@@ -1,38 +1,57 @@
-<div class="description-container">
-  <span class="title">{{ 'about us :' | uppercase }}</span>
-  <div class="description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel
-    justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget
-    blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta.
-    Vivamus elit urna, dignissim a vestibulum. Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu
-    ipsum. Cras porta malesuada eros.
-  </div>
-  <div class="download-button-container" fxLayout="row">
-    <div class="download-button" fxLayout="row">
-      <img [src]="appStoreIconSrc" />
-      <div
-        class="download-text-container"
-        fxLayout="column"
-        fxLayoutAlign="center center"
-      >
-        <span class="download-text">Download on the</span>
-        <span class="store-name">App Store</span>
+<div
+  class="main-container"
+  fxLayout="column"
+  fxLayout.gt-sm="row"
+  fxLayoutAlign="center center"
+  fxLayoutAlign.gt-sm="start"
+  ngClass.gt-sm="desktop"
+>
+  <div class="description-container">
+    <span class="title" ngClass.gt-sm="desktop-title">{{
+      'about us :' | uppercase
+    }}</span>
+    <div class="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel
+      justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget
+      blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta.
+      Vivamus elit urna, dignissim a vestibulum. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu
+      ipsum. Cras porta malesuada eros.
+    </div>
+    <div class="image-container">
+      <img [src]="aboutLogoSrc" alt="epicure" />
+    </div>
+    <div
+      class="download-button-container"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      fxLayoutAlign.gt-sm="start"
+    >
+      <div class="download-button" fxLayout="row" fxLayoutAlign="center center">
+        <img [src]="appStoreIconSrc" />
+        <div
+          class="download-text-container"
+          fxLayout="column"
+          fxLayoutAlign="center center"
+        >
+          <span class="download-text">Download on the</span>
+          <span class="store-name">App Store</span>
+        </div>
+      </div>
+      <div class="download-button" fxLayout="row" fxLayoutAlign="center center">
+        <img [src]="googlePlayIconSrc" />
+        <div
+          class="download-text-container"
+          fxLayout="column"
+          fxLayoutAlign="center center"
+        >
+          <span class="download-text">Get it on</span>
+          <span class="store-name">Google Play</span>
+        </div>
       </div>
     </div>
-    <div class="download-button" fxLayout="row">
-      <img [src]="googlePlayIconSrc" />
-      <div
-        class="download-text-container"
-        fxLayout="column"
-        fxLayoutAlign="center center"
-      >
-        <span class="download-text">Get it on</span>
-        <span class="store-name">Google Play</span>
-      </div>
-    </div>
   </div>
-</div>
-<div class="image-container">
-  <img [src]="aboutLogoSrc" alt="epicure" />
+  <div class="image-container-desktop">
+    <img [src]="aboutLogoSrc" alt="epicure" />
+  </div>
 </div>

@@ -7,6 +7,12 @@ body {
 }
 
 .title {
+  font-size: base.$font-size-m-title;
+  letter-spacing: base.$letter-spacing-xs;
+  padding: 15px;
+}
+
+.desktop-title {
   font-size: base.$font-size-l;
   letter-spacing: base.$letter-spacing-xl;
   padding: 40px;
