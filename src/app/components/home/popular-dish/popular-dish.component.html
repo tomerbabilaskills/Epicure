@@ -1,8 +1,7 @@
-<span class="title" ngClass.gt-sm="desktop-title">{{
-  'signature dish of :' | uppercase
-}}</span>
+<span class="title" ngClass.gt-sm="desktop-title">
+  {{ 'signature dish of :' | uppercase }}
+</span>
 <swiper class="card-container">
-  <!-- <div class="card-container" fxLayout="row"> -->
   <div
     *ngFor="let card of data"
     class="card dish-container"

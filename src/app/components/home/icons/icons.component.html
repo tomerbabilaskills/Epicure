@@ -1,12 +1,21 @@
-<span class="title">{{ 'the meaning of our icons :' | uppercase }}</span>
-<div class="container" fxLayoutAlign="start end">
-  <div
-    *ngFor="let icon of icons"
-    class="icon"
-    fxLayout="column"
-    fxLayoutAlign="start center"
-  >
-    <img [src]="icon.path" [alt]="icon.name" />
-    <span class="icon-title">{{ icon.name }}</span>
+<div
+  class="main-container"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  ngClass.gt-sm="desktop"
+>
+  <span class="title" ngClass.gt-sm="desktop-title">
+    {{ 'the meaning of our icons :' | uppercase }}
+  </span>
+  <div class="container" fxLayoutAlign="start end">
+    <div
+      *ngFor="let icon of icons"
+      class="icon"
+      fxLayout="column"
+      fxLayoutAlign="start center"
+    >
+      <img [src]="icon.path" [alt]="icon.name" />
+      <span class="icon-title">{{ icon.name }}</span>
+    </div>
   </div>
 </div>
