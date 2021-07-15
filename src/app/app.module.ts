@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
@@ -20,6 +21,8 @@ import { ChefComponent } from './components/home/chef/chef.component';
 import { AboutComponent } from './components/home/about/about.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { RouteButtonsMobileComponent } from './components/home/route-buttons-mobile/route-buttons-mobile.component';
+import { RestaurantsPageComponent } from './pages/restaurants-page/restaurants-page.component';
+import { ChefsPageComponent } from './pages/chefs-page/chefs-page.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -44,8 +47,16 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     AboutComponent,
     SearchBarComponent,
     RouteButtonsMobileComponent,
+    RestaurantsPageComponent,
+    ChefsPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FlexLayoutModule, SwiperModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FlexLayoutModule,
+    SwiperModule,
+    BrowserAnimationsModule,
+  ],
   providers: [
     {
       provide: SWIPER_CONFIG,

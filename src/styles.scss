@@ -9,6 +9,10 @@ body {
   --swiper-theme-color: #000;
 }
 
+main {
+  position: relative;
+}
+
 .title {
   font-size: base.$font-size-m-title;
   letter-spacing: base.$letter-spacing-xs;
