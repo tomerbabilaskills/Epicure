@@ -3,8 +3,12 @@
 .container {
   padding: 40px;
   background-color: base.$primary-color;
-  button {
+  a {
     background-color: base.$route-buttons-color;
+    font-size: base.$font-size-m-title;
+    letter-spacing: base.$letter-spacing-xs;
+    text-decoration: none;
+    color: inherit;
     border: none;
     padding: 14px;
     &:not(:last-child) {
@@ -15,7 +19,7 @@
 
 .container.desktop {
   padding: 0;
-  button {
+  a {
     display: none;
   }
 }

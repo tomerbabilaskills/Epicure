@@ -7,13 +7,15 @@ import { fader, slider } from './animations/route-animation';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [fader],
+  animations: [slider],
 })
 export class AppComponent {
-  title = 'client';
+  title = 'Epicure';
+  innerWidth = window.innerWidth;
 
   prepareRoute(outlet: RouterOutlet) {
     return (
+      this.innerWidth < 960 &&
       outlet &&
       outlet.activatedRouteData &&
       outlet.activatedRouteData['animation']
