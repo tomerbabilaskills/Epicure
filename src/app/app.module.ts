@@ -26,10 +26,16 @@ import { ChefsPageComponent } from './pages/chefs-page/chefs-page.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 20,
   pagination: true,
   navigation: true,
+  breakpoints: {
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 13.5,
+    },
+  },
 };
 
 @NgModule({

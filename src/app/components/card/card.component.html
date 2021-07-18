@@ -1,9 +1,10 @@
-<img [src]="data.imgSrc" [alt]="data.name" />
+<img [src]="data.imgSrc" [alt]="data.name" ngClass.gt-sm="desktop" />
 <div
   class="information-container"
   [class.dish]="type === 'dish'"
   fxLayout="column"
   fxLayoutAlign="start center"
+  ngClass.gt-sm="desktop"
 >
   <span
     [ngClass]="size === 'big' ? 'big-title' : 'small-title'"

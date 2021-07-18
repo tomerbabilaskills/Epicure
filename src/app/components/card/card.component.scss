@@ -4,9 +4,14 @@
   display: inline-block;
   background-color: base.$secondary-color;
   text-align: center;
-  .information-container {
+  img {
+    width: 155px;
+  }
+  img.desktop {
+    width: 100%;
+  }
+  .information-container.desktop {
     max-width: 360px;
-    height: 135px;
     .card-title {
       font-family: base.$secondary-font;
       font-weight: normal;
@@ -23,6 +28,49 @@
       letter-spacing: base.$letter-spacing-xl;
       font-size: base.$font-size-l;
       margin-top: 15px;
+    }
+    .description {
+      font-size: 24px;
+      margin-bottom: auto;
+      letter-spacing: base.$letter-spacing-m;
+      max-width: 292px;
+    }
+    .type {
+      width: 30px;
+      height: 30px;
+    }
+    .price-container {
+      margin: 10px;
+      .line {
+        border-top: 1px base.$border-color solid;
+        width: 110px;
+      }
+      .price {
+        margin: 10px;
+        font-size: base.$font-size-m;
+      }
+    }
+  }
+  .information-container {
+    max-width: 360px;
+    height: 135px;
+    .card-title {
+      font-family: base.$secondary-font;
+      font-weight: normal;
+      max-width: 200px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .big-title {
+      font-size: base.$font-size-xxl;
+      letter-spacing: base.$letter-spacing-xl;
+      margin-top: 15px;
+    }
+    .small-title {
+      letter-spacing: base.$letter-spacing-s;
+      font-size: base.$font-size-m-xl;
+      margin-top: 15px;
+      max-width: 100px;
     }
     .description {
       font-size: 24px;

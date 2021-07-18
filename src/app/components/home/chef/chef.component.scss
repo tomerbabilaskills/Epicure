@@ -1,19 +1,17 @@
 @use '../../../../assets/styles/base';
 
-.main-container {
+.main-container.desktop {
   padding: 60px;
   .info-container {
     .img-container {
-      position: relative;
-      width: 430px;
-      background-color: black;
+      width: 435px;
+      margin-bottom: 0;
+      img {
+        margin-bottom: -10px;
+      }
       span {
-        position: absolute;
         height: 78px;
         width: 100%;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.8);
         font-size: base.$font-size-xxl;
         letter-spacing: base.$letter-spacing-m;
         font-family: base.$secondary-font;
@@ -23,13 +21,66 @@
       max-width: 540px;
       text-align: justify;
       font-size: base.$font-size-m;
-      letter-spacing: base.$letter-spacing-xs;
       margin-left: 70px;
     }
   }
 }
 
+.main-container {
+  padding: 60px 0 30px;
+  .info-container {
+    .img-container {
+      position: relative;
+      width: 330px;
+      background-color: black;
+      overflow: hidden;
+      margin-bottom: 20px;
+      img {
+        margin-bottom: -50px;
+        width: 100%;
+      }
+      span {
+        position: absolute;
+        height: 55px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: base.$font-size-l;
+        letter-spacing: base.$letter-spacing-xs;
+        font-family: base.$secondary-font;
+      }
+    }
+    .description {
+      max-width: 330px;
+      text-align: center;
+      font-size: base.$font-size-m-m;
+      letter-spacing: base.$letter-spacing-xs;
+      margin-left: 0;
+    }
+  }
+}
+
 .restaurants-container {
+  margin-left: 20px;
+  margin-bottom: 100px;
+  .restaurants-title {
+    font-size: base.$font-size-m-title;
+    letter-spacing: base.$letter-spacing-xs;
+    padding-bottom: 20px;
+  }
+  .card-container {
+    width: 100%;
+    max-width: 700px;
+    .restaurant {
+      width: auto;
+      height: 240px;
+      overflow: hidden;
+    }
+  }
+}
+
+.restaurants-container.desktop {
   margin-left: 200px;
   margin-bottom: 115px;
   .restaurants-title {
@@ -38,12 +89,8 @@
     padding-bottom: 30px;
   }
   .card-container {
-    width: 100%;
-    max-width: 700px;
     .restaurant {
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+      height: auto;
     }
   }
 }
