@@ -1,14 +1,21 @@
-<span class="title" ngClass.gt-sm="desktop-title">
-  {{ 'signature dish of :' | uppercase }}
-</span>
-<swiper class="card-container">
-  <div
-    *ngFor="let card of data"
-    class="card dish-container"
-    fxLayout="column"
-    fxLayoutAlign="start center"
-  >
-    <span class="restaurant-title">{{ card.restaurant }}</span>
-    <app-card type="dish" [data]="card"></app-card>
-  </div>
-</swiper>
+<div
+  class="main-container"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  ngClass.gt-sm="desktop"
+>
+  <span class="title" ngClass.gt-sm="desktop-title">
+    {{ 'signature dish of :' | uppercase }}
+  </span>
+  <swiper class="card-container">
+    <div
+      *ngFor="let card of data"
+      class="card dish-container"
+      fxLayout="column"
+      fxLayoutAlign="start center"
+    >
+      <span class="restaurant-title">{{ card.restaurant }}</span>
+      <app-card type="dish" [data]="card"></app-card>
+    </div>
+  </swiper>
+</div>

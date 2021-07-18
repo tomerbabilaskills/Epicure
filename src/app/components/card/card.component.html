@@ -1,4 +1,9 @@
-<img [src]="data.imgSrc" [alt]="data.name" ngClass.gt-sm="desktop" />
+<img
+  [src]="data.imgSrc"
+  [alt]="data.name"
+  ngClass.gt-sm="desktop"
+  [ngClass.lt-sm]="size === 'small' ? 'chef-image' : ''"
+/>
 <div
   class="information-container"
   [class.dish]="type === 'dish'"
@@ -12,9 +17,9 @@
   >
     {{ data.name }}
   </span>
-  <span *ngIf="isDescription(data)" class="description">{{
-    data.description
-  }}</span>
+  <span *ngIf="isDescription(data)" class="description">
+    {{ data.description }}
+  </span>
   <div *ngIf="isDish(data)">
     <img
       *ngFor="let type of data.types"

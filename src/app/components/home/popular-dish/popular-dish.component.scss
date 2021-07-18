@@ -1,19 +1,28 @@
 @use '../../../../assets/styles/base';
 
-:host {
+.main-container.desktop {
   margin: 85px 170px;
   .card-container {
-    width: 100%;
-    .card {
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
-    }
     .dish-container {
       .restaurant-title {
         padding-bottom: 25px;
         font-size: base.$font-size-l;
         letter-spacing: base.$letter-spacing-l;
+      }
+    }
+  }
+}
+
+.main-container {
+  margin: 100px 0 100px 20px;
+  .card-container {
+    width: 100%;
+    .dish-container {
+      width: 260px;
+      .restaurant-title {
+        padding-bottom: 25px;
+        font-size: base.$font-size-m-l;
+        letter-spacing: base.$letter-spacing-xs;
         font-family: base.$secondary-font;
       }
     }
