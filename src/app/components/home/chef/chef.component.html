@@ -7,7 +7,12 @@
   <span class="title" ngClass.gt-sm="desktop-title">
     {{ 'chef of the week :' | uppercase }}
   </span>
-  <div class="info-container" fxLayout="column" fxLayout.gt-sm="row">
+  <div
+    class="info-container"
+    fxLayout="column"
+    fxLayout.gt-sm="row"
+    fxLayoutAlign.gt-sm="center"
+  >
     <div class="img-container" fxLayoutAlign="center">
       <img [src]="chefImgSrc" alt="Yosi Shitrit" />
       <span fxLayoutAlign="center center">Yossi Shitrit</span>

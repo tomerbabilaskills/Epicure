@@ -1,7 +1,7 @@
 @use '../../../assets/styles/base';
 
 :host ::ng-deep {
-  border: 1px black solid;
+  border: 0.5px base.$border-color solid;
   border-radius: 5px;
   padding-left: 5px;
   .desktop-big {

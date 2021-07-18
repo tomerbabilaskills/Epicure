@@ -11,6 +11,7 @@
     width: 100%;
   }
   .information-container.desktop {
+    max-width: 100%;
     .big-title {
       font-size: base.$font-size-xxl;
       letter-spacing: base.$letter-spacing-xl;

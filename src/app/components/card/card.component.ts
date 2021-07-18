@@ -8,7 +8,7 @@ import { IChefRestaurant, IDish, IRestaurant } from 'src/app/interfaces';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  @Input() type: string = '';
+  @Input() type: 'restaurant' | 'dish' = 'restaurant';
   @Input() size: string = 'big';
   @Input() data!: IRestaurant | IDish | IChefRestaurant;
 
