@@ -1,22 +1,28 @@
 @use '../../../../assets/styles/base';
 
-:host {
+.main-container.desktop {
   margin: 100px 170px 0;
-  .card-container {
-    width: 100%;
-    height: 100%;
-    .card {
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
-    }
-  }
   .show-more {
+    display: block;
     margin-top: 30px;
     span {
       font-size: base.$font-size-l;
       letter-spacing: base.$letter-spacing-xl;
       margin-right: 13px;
     }
+  }
+}
+
+.main-container {
+  margin: 50px 0 0 20px;
+  .card-container {
+    width: 100%;
+    height: 100%;
+    .card {
+      width: 205px;
+    }
+  }
+  .show-more {
+    display: none;
   }
 }
