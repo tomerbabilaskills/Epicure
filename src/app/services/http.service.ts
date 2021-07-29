@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { IDish } from '../interfaces';
+import { IDish, IRestaurant } from '../interfaces';
 
 @Injectable({
   providedIn: 'root',
@@ -20,8 +20,8 @@ export class HttpService {
     return this.http.get(`${this.apiUrl}/chef`);
   }
 
-  getRestaurants() {
-    return this.http.get(`${this.apiUrl}/restaurant`);
+  getRestaurants(): Observable<IRestaurant[]> {
+    return this.http.get<IRestaurant[]>(`${this.apiUrl}/restaurant`);
   }
 
   getDishes(): Observable<IDish[]> {
