@@ -8,9 +8,7 @@ import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { IChefOfTheWeek, IDish, IRestaurant } from '../interfaces';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class HttpService {
   apiUrl: string = 'http://localhost:3000/api';
 
