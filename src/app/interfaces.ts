@@ -9,6 +9,13 @@ export interface IChefRestaurant {
   imgUrl: string;
 }
 
+export interface IChefOfTheWeek {
+  name: string;
+  description: string;
+  imgUrl: string;
+  restaurants: IChefRestaurant[];
+}
+
 export interface IIcon {
   name: string;
   path: string;

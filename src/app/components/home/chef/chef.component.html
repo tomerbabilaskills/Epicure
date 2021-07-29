@@ -14,26 +14,22 @@
     fxLayoutAlign.gt-sm="center"
   >
     <div class="img-container" fxLayoutAlign="center">
-      <img [src]="chefImgSrc" alt="Yosi Shitrit" />
-      <span fxLayoutAlign="center center">Yossi Shitrit</span>
+      <img [src]="data.imgUrl" [alt]="data.name" />
+      <span fxLayoutAlign="center center">{{ data.name }}</span>
     </div>
-    <span class="description">
-      Chef Yossi Shitrit has been living and breathing his culinary dreams for
-      more than two decades, including running the kitchen in his first
-      restaurant, the fondly-remembered Violet, located in Moshav Udim.
-      Shitrit's creativity and culinary acumen born of long experience are
-      expressed in the every detail of each and every dish.
-    </span>
+    <span class="description">{{ data.description }}</span>
   </div>
 </div>
 <div class="restaurants-container" fxLayout="column" ngClass.gt-sm="desktop">
-  <span class="restaurants-title">Yossi's restaurants :</span>
+  <span class="restaurants-title"
+    >{{ data.name | firstName }}'s restaurants :</span
+  >
   <swiper class="card-container">
     <app-card
       size="small"
       class="restaurant"
       type="restaurant"
-      *ngFor="let restaurant of data"
+      *ngFor="let restaurant of data.restaurants"
       [data]="restaurant"
     ></app-card>
   </swiper>
