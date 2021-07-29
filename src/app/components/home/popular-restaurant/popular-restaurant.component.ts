@@ -16,6 +16,6 @@ export class PopularRestaurantComponent implements OnInit {
   constructor(private restaurantService: RestaurantService) {}
 
   ngOnInit(): void {
-    this.data = this.restaurantService.mockData.restaurants;
+    // this.data = this.restaurantService.mockData.restaurants;
   }
 }

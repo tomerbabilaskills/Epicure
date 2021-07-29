@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { RestaurantService } from 'src/app/services/restaurant.service';
+import { HttpService } from 'src/app/services/http.service';
 
 import { IChefRestaurant } from 'src/app/interfaces';
 
@@ -12,9 +13,12 @@ import { IChefRestaurant } from 'src/app/interfaces';
 export class ChefComponent implements OnInit {
   data: IChefRestaurant[] = [];
   chefImgSrc: string = '../../../assets/images/chef.jpg';
-  constructor(private restaurantService: RestaurantService) {}
+  constructor(
+    private restaurantService: RestaurantService,
+    private httpService: HttpService
+  ) {}
 
   ngOnInit(): void {
-    this.data = this.restaurantService.mockData.chefRestaurants;
+    // this.data = this.restaurantService.mockData.chefRestaurants;
   }
 }

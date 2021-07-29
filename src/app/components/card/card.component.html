@@ -1,5 +1,5 @@
 <img
-  [src]="data.imgSrc"
+  [src]="data.imgUrl"
   [alt]="data.name"
   ngClass.gt-sm="desktop"
   [ngClass.lt-sm]="size === 'small' ? 'chef-image' : ''"
@@ -22,7 +22,7 @@
   </span>
   <div *ngIf="isDish(data)">
     <img
-      *ngFor="let type of data.types"
+      *ngFor="let type of data.tags"
       [src]="getSrc(type)"
       [alt]="type"
       class="type"

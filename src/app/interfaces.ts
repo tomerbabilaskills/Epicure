@@ -1,12 +1,12 @@
 export interface IRestaurant {
   name: string;
   description: string;
-  imgSrc: string;
+  imgUrl: string;
 }
 
 export interface IChefRestaurant {
   name: string;
-  imgSrc: string;
+  imgUrl: string;
 }
 
 export interface IIcon {
@@ -17,8 +17,8 @@ export interface IIcon {
 export interface IDish {
   name: string;
   description: string;
-  imgSrc: string;
+  imgUrl: string;
   price: number;
-  types: string[];
+  tags: string[];
   restaurant: string;
 }
