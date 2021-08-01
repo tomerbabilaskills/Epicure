@@ -1,1 +1,18 @@
-<p>admin-page works!</p>
+<div fxLayoutAlign="center center">
+  <table datatable class="row-border hover">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Chef</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td><img [src]="item.imgUrl" [alt]="item.name" /></td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

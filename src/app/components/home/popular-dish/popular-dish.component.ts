@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { RestaurantService } from 'src/app/services/restaurant.service';
+import { HttpService } from 'src/app/services/http.service';
 
 import { IDish } from 'src/app/interfaces';
-import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-popular-dish',
@@ -13,13 +12,9 @@ import { HttpService } from 'src/app/services/http.service';
 export class PopularDishComponent implements OnInit {
   data: IDish[] = [];
 
-  constructor(
-    private restaurantService: RestaurantService,
-    private httpService: HttpService
-  ) {}
+  constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
-    // this.data = this.restaurantService.mockData.dishes;
     this.httpService.getDishes().subscribe((data) => (this.data = data));
   }
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { RestaurantService } from 'src/app/services/restaurant.service';
 import { HttpService } from 'src/app/services/http.service';
 
 import { IRestaurant } from 'src/app/interfaces';
@@ -14,13 +13,9 @@ export class PopularRestaurantComponent implements OnInit {
   data: IRestaurant[] = [];
   showMoreSrc: string = '../../../assets/images/icons/arrows-icon.svg';
 
-  constructor(
-    private restaurantService: RestaurantService,
-    private httpService: HttpService
-  ) {}
+  constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
-    // this.data = this.restaurantService.mockData.restaurants;
     this.httpService.getRestaurants().subscribe((data) => (this.data = data));
   }
 }
