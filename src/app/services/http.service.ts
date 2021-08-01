@@ -5,7 +5,7 @@ import {
   HttpHeaders,
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { retry, catchError } from 'rxjs/operators';
 import { IChefOfTheWeek, IDish, IRestaurant } from '../interfaces';
 
 @Injectable({ providedIn: 'root' })
