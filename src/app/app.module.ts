@@ -25,6 +25,7 @@ import { RouteButtonsMobileComponent } from './components/home/route-buttons-mob
 import { RestaurantsPageComponent } from './pages/restaurants-page/restaurants-page.component';
 import { ChefsPageComponent } from './pages/chefs-page/chefs-page.component';
 import { FirstNamePipe } from './pipes/first-name.pipe';
+import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -57,6 +58,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     RestaurantsPageComponent,
     ChefsPageComponent,
     FirstNamePipe,
+    AdminPageComponent,
   ],
   imports: [
     BrowserModule,
