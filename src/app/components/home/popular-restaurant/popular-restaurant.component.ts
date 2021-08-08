@@ -16,6 +16,8 @@ export class PopularRestaurantComponent implements OnInit {
   constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
-    this.httpService.getRestaurants().subscribe((data) => (this.data = data));
+    this.httpService
+      .getPopularRestaurants()
+      .subscribe((data) => (this.data = data));
   }
 }

@@ -1,4 +1,5 @@
 export interface IRestaurant {
+  _id: string;
   name: string;
   description: string;
   imgUrl: string;
@@ -10,6 +11,7 @@ export interface IChefRestaurant {
 }
 
 export interface IChefOfTheWeek {
+  _id: string;
   name: string;
   description: string;
   imgUrl: string;
@@ -22,6 +24,7 @@ export interface IIcon {
 }
 
 export interface IDish {
+  _id: string;
   name: string;
   description: string;
   imgUrl: string;

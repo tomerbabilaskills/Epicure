@@ -11,6 +11,7 @@ import { IChefOfTheWeek } from 'src/app/interfaces';
 })
 export class ChefComponent implements OnInit {
   data: IChefOfTheWeek = {
+    _id: '',
     name: '',
     description: '',
     imgUrl: '',

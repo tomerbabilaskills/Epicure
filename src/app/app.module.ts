@@ -26,6 +26,7 @@ import { RestaurantsPageComponent } from './pages/restaurants-page/restaurants-p
 import { ChefsPageComponent } from './pages/chefs-page/chefs-page.component';
 import { FirstNamePipe } from './pipes/first-name.pipe';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
+import { rowTableComponent } from './components/admin/row-table/row-table.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -59,6 +60,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ChefsPageComponent,
     FirstNamePipe,
     AdminPageComponent,
+    rowTableComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,9 +24,21 @@ export class HttpService {
       .pipe(catchError(this.handleError));
   }
 
+  getPopularRestaurants(): Observable<IRestaurant[]> {
+    return this.http
+      .get<IRestaurant[]>(`${this.apiUrl}/restaurant/popular`)
+      .pipe(catchError(this.handleError));
+  }
+
   getRestaurants(): Observable<IRestaurant[]> {
     return this.http
       .get<IRestaurant[]>(`${this.apiUrl}/restaurant`)
+      .pipe(catchError(this.handleError));
+  }
+
+  deleteRestaurant(id: string): Observable<any> {
+    return this.http
+      .delete(`${this.apiUrl}/restaurant/${id}`, { responseType: 'text' })
       .pipe(catchError(this.handleError));
   }
 

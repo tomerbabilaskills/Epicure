@@ -1,0 +1,7 @@
+<td>
+  <img [src]="item.imgUrl" [alt]="item.name" class="item-image" />
+</td>
+<td>{{ item.name }}</td>
+<td>{{ item.description }}</td>
+<td><button>Edit</button></td>
+<td><button (click)="deleteItem(item._id)">Delete</button></td>
