@@ -10,7 +10,8 @@ import { IChefOfTheWeek, IDish, IRestaurant } from '../interfaces';
 
 @Injectable({ providedIn: 'root' })
 export class HttpService {
-  apiUrl: string = 'http://localhost:3000/api';
+  apiUrl: string =
+    'http://ec2-3-140-254-232.us-east-2.compute.amazonaws.com/api';
 
   httpOptions = {
     header: new HttpHeaders({ 'Content-Type': 'application/json' }),
