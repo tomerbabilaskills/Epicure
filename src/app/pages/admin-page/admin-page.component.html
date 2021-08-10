@@ -1,4 +1,13 @@
 <div fxLayout="column" fxLayoutAlign="center center">
+  <div>
+    <label for="tables">Choose a table:</label>
+
+    <select name="tables">
+      <option value="chefs">Chefs</option>
+      <option value="restaurants">Restaurants</option>
+      <option value="dishes">Dishes</option>
+    </select>
+  </div>
   <table datatable class="row-border hover">
     <thead>
       <tr>
@@ -9,13 +18,6 @@
       </tr>
     </thead>
     <tbody>
-      <!-- <td>
-          <img [src]="item.imgUrl" [alt]="item.name" class="item-image" />
-        </td>
-        <td>{{ item.name }}</td>
-        <td>{{ item.description }}</td>
-        <td><button>Edit</button></td>
-        <td><button (click)="deleteItem(item._id)">Delete</button></td> -->
       <tr app-row-table *ngFor="let item of data" [item]="item"></tr>
     </tbody>
   </table>

@@ -9,6 +9,9 @@ import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { FirstNamePipe } from './pipes/first-name.pipe';
+
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -24,9 +27,9 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { RouteButtonsMobileComponent } from './components/home/route-buttons-mobile/route-buttons-mobile.component';
 import { RestaurantsPageComponent } from './pages/restaurants-page/restaurants-page.component';
 import { ChefsPageComponent } from './pages/chefs-page/chefs-page.component';
-import { FirstNamePipe } from './pipes/first-name.pipe';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { rowTableComponent } from './components/admin/row-table/row-table.component';
+import { ModalComponent } from './components/admin/modal/modal.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -61,6 +64,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FirstNamePipe,
     AdminPageComponent,
     rowTableComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
